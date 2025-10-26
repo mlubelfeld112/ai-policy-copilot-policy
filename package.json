@@ -1,5 +1,5 @@
 {
-  "name": "app",
+  "name": "ai-policy-copilot",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,13 +8,11 @@
     "build": "vite build",
     "preview": "vite preview"
   },
+  "devDependencies": {
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0"
+  },
   "dependencies": {
     "@google/genai": "^1.27.0"
-  },
-  "devDependencies": {
-    "@types/node": "^22.14.0",
-    
-    "typescript": "~5.8.2",
-    "vite": "^6.2.0"
   }
 }
