@@ -112,7 +112,7 @@ Use Markdown for formatting, including headers (H4), bullet points, and bold tex
 
     const response = await ai.models.generateContent({
       model: 'gemini-2.5-flash',
-      contents: userQuery,
+      contents: { parts: [{ text: userQuery }] },
       config: {
         systemInstruction: systemInstruction,
       }
