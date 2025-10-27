@@ -20,7 +20,7 @@ const historyList = document.getElementById("history-list") as HTMLUListElement;
 const clearHistoryBtn = document.getElementById("clear-history-btn") as HTMLButtonElement;
 
 // --- STATE ---
-const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_API_KEY });
+const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
 type HistoryItem = { query: string; response: string; };
 let history: HistoryItem[] = [];
 
